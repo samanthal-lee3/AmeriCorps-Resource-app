@@ -1,13 +1,15 @@
 class ResourcesController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create]
 
-def new
-end
+    def index
+        @resources = Resource.all
+    end
 
-def create
-end
+    def new
+    end
+
+    def create
+    end
     
-def show
-end
 
 end

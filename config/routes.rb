@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'static_pages#index'
-  resources :programs, :resources, only: [:new, :create, :show]
+  resources :programs, :resources, only: [:new, :create, :index]
 end
